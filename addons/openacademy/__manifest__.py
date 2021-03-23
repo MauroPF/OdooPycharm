@@ -2,10 +2,10 @@
 {
     'name': "Open Academy",
 
-    'summary': """A ver si funciona""",
+    'summary': """Módulo OpenAcademy""",
 
     'description': """
-        Tiene pinta que no va a funcionar
+        Aquí iría la descripción del módulo
     """,
 
     'author': "Mauro P.",
@@ -14,7 +14,7 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Test',
+    'category': 'Education',
     'version': '0.4',
 
     # any module necessary for this one to work correctly
@@ -23,11 +23,12 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'templates.xml',
+        'views/views.xml',
+        'views/templates.xml',
         'views/openacademy.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo.xml',
+        'demo/demo.xml',
     ],
 }
